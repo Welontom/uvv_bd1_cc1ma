@@ -131,7 +131,7 @@ CREATE TABLE lojas.envios (
                 status VARCHAR(15) NOT NULL,
                 CONSTRAINT pk_envios PRIMARY KEY (envio_id)
 );
-COMMENT ON TABLE lojas.envios IS 'Tabela que armazena dados dos envios pedidos.'
+COMMENT ON TABLE lojas.envios IS 'Tabela que armazena dados dos envios pedidos.';
 COMMENT ON COLUMN lojas.envios.envio_id IS 'Primary key da tabela envios que contem o id do envio.';
 COMMENT ON COLUMN lojas.envios.loja_id IS 'Foreign key referente a loja que fará o envio.';
 COMMENT ON COLUMN lojas.envios.cliente_id IS 'Foreing key referente ao cliente que receberá/recebeu o envio';
@@ -166,7 +166,7 @@ CREATE TABLE lojas.pedidos_itens (
                 envio_id NUMERIC(38),
                 CONSTRAINT pk_pedidos_itens PRIMARY KEY (pedido_id, produto_id)
 );
-COMMENT ON TABLE lojas.envios IS 'Tabela que armazena dados dos itens de um pedido.'
+COMMENT ON TABLE lojas.envios IS 'Tabela que armazena dados dos itens de um pedido.';
 COMMENT ON COLUMN lojas.pedidos_itens.pedido_id IS 'Primary key da tabela pedidos_itens e foreign key referente ao id do pedido.';
 COMMENT ON COLUMN lojas.pedidos_itens.produto_id IS 'Primary key da tabela pedidos_itens e foreign key referente ao id do produto.';
 COMMENT ON COLUMN lojas.pedidos_itens.numero_da_linha IS 'Número da linha do item de um pedido.';

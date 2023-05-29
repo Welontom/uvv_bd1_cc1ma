@@ -22,11 +22,16 @@ LC_COLLATE = 'pt_BR.UTF-8'
 LC_CTYPE = 'pt_BR.UTF-8'
 ALLOW_CONNECTIONS = true;
 
+--	Troca do esquema padrão do usuário postgres.
+
+ALTER USER postgres
+SET SEARCH_PATH TO lojas,"$user",public;
+
 --	Conexão com o banco de dados
 
 \c 'dbname=uvv host=localhost user= welington password=12345';
 
---	Criação do esquema e troca para esquema padrão.
+--	Criação do esquema e troca para esquema padrão do usuário welington.
 
 CREATE SCHEMA lojas AUTHORIZATION welington;
 ALTER USER welington

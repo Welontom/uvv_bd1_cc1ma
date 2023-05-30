@@ -8,7 +8,7 @@ Trabalho realizado por **Welington Carvalho Branco Saldanha Junior** na discipli
 
 O repositório possui um diretório chamado ***pset1***. Nele, encontra-se o arquivo do projeto lógico nas extensões *.pdf* e *.architect* e o script sql pronto para ser executado conforme as instruções do professor.
 
-## Processo de desnvolvimeto
+## Processo de desenvolvimento
 
 ### Git e Github
 
